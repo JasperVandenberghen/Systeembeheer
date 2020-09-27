@@ -2,5 +2,5 @@
 # configuration settings see /usr/share/doc/cron-apt/README.gz.
 #
 MAILON="always"
-MAILTO="r0747180@ucll.be"
+MAILTO="jasper.vandenberghen@gmail.com"
 
