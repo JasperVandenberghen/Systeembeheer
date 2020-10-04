@@ -30,5 +30,3 @@ root	ALL=(ALL:ALL) ALL
 #includedir /etc/sudoers.d
 
 check ALL=NOPASSWD:/usr/lib/nagios/plugins/check_apt,/usr/sbin/arp
-
-check ALL=NOPASSWD:/usr/lib/nagios/plugins/check_apt,/usr/sbin/arp as root
