@@ -7,6 +7,7 @@ $TTL 3H
                 3H ); Negative Cache TTL
 
 ;Name Servers
+@		IN	NS 	ns.jasper-vandenberghen.sb.uclllabs.be
 @ 		IN 	NS	ns1.uclllabs.be.
 @		IN	NS 	ns2.uclllabs.be.
 ;Aliasses
