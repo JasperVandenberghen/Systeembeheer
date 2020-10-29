@@ -8,7 +8,7 @@
 
 zone "jasper-vandenberghen.sb.uclllabs.be" IN {
     type master;
-    file "/var/lib/bind/db.jasper-vandenberghen.sb.uclllabs.be";
+    file "/etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be";
     //allow-transfer { 192.0.2.2; };
 };
 
