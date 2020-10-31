@@ -1,6 +1,6 @@
 $TTL 3H
 @ IN SOA ns.jasper-vandenberghen.sb.uclllabs.be root.ns.jasper-vandenberghen.uclllabs.be (
-		1   ; Serial
+		2   ; Serial
                 3H  ; Refresh
                 1H  ; Retry
                 1W  ; Expire
