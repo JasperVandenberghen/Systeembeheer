@@ -1,6 +1,6 @@
-$TTL 3H
+$TTL 360
 @ IN SOA ns.jasper-vandenberghen.sb.uclllabs.be root.ns.jasper-vandenberghen.uclllabs.be (
-		2   ; Serial
+		3   ; Serial
                 3H  ; Refresh
                 1H  ; Retry
                 1W  ; Expire
@@ -10,6 +10,7 @@ $TTL 3H
 @		IN	NS 	ns.jasper-vandenberghen.sb.uclllabs.be.
 @ 		IN 	NS	ns1.uclllabs.be.
 @		IN	NS 	ns2.uclllabs.be.
+@		IN	NS	ns.lowie-ausloos.sb.uclllabs.be.
 ;Aliasses
 ns		IN	A	193.191.177.153
 www		IN	A	193.191.177.153
