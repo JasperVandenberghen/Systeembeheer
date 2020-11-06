@@ -6,9 +6,16 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+include "/etc/bind/named.conf.mrt-zones";
+
 zone "jasper-vandenberghen.sb.uclllabs.be" IN {
     type master;
     file "/etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be";
     //allow-transfer { 192.0.2.2; };
 };
+
+zone "lowie-ausloos.sb.uclllabs.be" IN {
+	type slave;
+	masters { 193.191.177.176 };
+}
 
