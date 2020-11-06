@@ -1,1 +1,5 @@
 mrt/
+bind/named.conf.mrt-zones
+bind/zones/zone.*
+apache2/sites-available/domain.*
+apache2/sites-enabled/domain.*
