@@ -4,7 +4,7 @@ DOMAIN="`echo $1 | awk -F . '{print $2}'`"
 GREP=$(grep "$SUBDOMAIN[[:space:]]*IN[[:space:]]*A" /etc/bind/zones/zone.$DOMAIN)
 if [ -z "$GREP" ];
 then
-echo "i no findings"
+echo "cannot find this"
 else
 	mkdir /var/www/html/domain.$SUBDOMAIN.$DOMAIN
 	touch /var/www/html/domain.$SUBDOMAIN.$DOMAIN/index.html
