@@ -1,6 +1,6 @@
 $TTL 360
 @ IN SOA ns.jasper-vandenberghen.sb.uclllabs.be root.ns.jasper-vandenberghen.uclllabs.be (
-		6   ; Serial
+		14   ; Serial
                 3H  ; Refresh
                 1H  ; Retry
                 1W  ; Expire
@@ -21,4 +21,6 @@ www2		IN 	A	193.191.177.153
 secure		IN	A	193.191.177.153
 supersecure	IN	A	193.191.177.153
 subdomain	IN	A	193.191.177.153
+subzoneooti1k	IN 	A 	193.191.177.153
+subzoneooti1k	IN	NS	ns.jasper-vandenberghen.sb.uclllabs.be
 test		IN	A	193.191.177.254
