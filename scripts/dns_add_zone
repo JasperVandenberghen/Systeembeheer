@@ -3,9 +3,6 @@ ZONE=$1
 
 touch /etc/bind/zones/zone.$1
 
-perl -i  -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be
-perl -i  -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/zone.$1
-
 echo "zone \"$1.jasper-vandenberghen.sb.uclllabs.be\" {
         type master;
         file \"/etc/bind/zones/zone.$1\";
@@ -25,5 +22,8 @@ echo "\$TTL 360
 
 echo "$1              IN      NS       ns.jasper-vandenberghen.sb.uclllabs.be." >> /etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be
 echo "$1              IN      A        193.191.177.153" >> /etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be
+
+perl -i  -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/db.jasper-vandenberghen.sb.uclllabs.be
+perl -i  -pe '/Serial/ && s/(\d+)/$1+1 . $2/e' /etc/bind/zones/zone.$1
 
 rndc reload
