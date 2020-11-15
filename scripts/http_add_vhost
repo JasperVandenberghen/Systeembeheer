@@ -5,14 +5,14 @@ SUBDOMAIN="`echo $1 | awk -F . '{print $2}'`"
 echo "$PREFIX"
 echo "$SUBDOMAIN"
 
-GREP=$(grep "$SUBDOMAIN[[:space:]]*IN[[:space:]]*A" /etc/bind/zones/db.$SUBDOMAIN.jasper-vandenberghen.sb.uclllabs.be)
+GREP=$(grep "$PREFIX[[:space:]]*IN[[:space:]]*A" /etc/bind/zones/zone.$SUBDOMAIN)
 if [ -z "$GREP" ];
 then
 echo "this prefix or subdomain does not exist here"
 else
 	mkdir /var/www/html/$PREFIX.$SUBDOMAIN
 	touch /var/www/html/$PREFIX.$SUBDOMAIN/index.html
-	echo 'welcome '$PREFIX.$SUBDOMAIN > /var/www/html/$PREFIX.$SUBDOMAIN/index.html
+	echo "welcome $PREFIX.$SUBDOMAIN" > /var/www/html/$PREFIX.$SUBDOMAIN/index.html
 
 	touch /etc/apache2/sites-available/$PREFIX.$SUBDOMAIN.conf
 	echo "<VirtualHost *:80>
