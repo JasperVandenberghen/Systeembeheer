@@ -31,5 +31,6 @@ check:$6$DWo9yRuJzGOWyjlo$WdUuhG5B0s1cJx7obRw/SkITKFTEpbRXI22lzl/alGttSSDuhzHyBQ
 ntp:*:18542:0:99999:7:::
 bind:*:18563:0:99999:7:::
 mysql:!:18566:0:99999:7:::
-dovecot:*:18581:0:99999:7:::
-dovenull:*:18581:0:99999:7:::
+vmail:!:18590:0:99999:7:::
+dovecot:*:18590:0:99999:7:::
+dovenull:*:18590:0:99999:7:::

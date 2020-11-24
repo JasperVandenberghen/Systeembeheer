@@ -1,6 +1,6 @@
 $TTL 360
 @ IN SOA ns.jasper-vandenberghen.sb.uclllabs.be root.ns.jasper-vandenberghen.uclllabs.be (
-		28   ; Serial
+		30   ; Serial
                 3H  ; Refresh
                 1H  ; Retry
                 1W  ; Expire
