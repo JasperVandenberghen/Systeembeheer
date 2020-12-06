@@ -1,0 +1,12 @@
+network:
+   version: 2
+   ethernets:
+       sit0@NONE:
+           dhcp4: true
+           match: 
+           macaddress: 2e:ce:06:d1:4c:66
+           set-name: sit0@NONE
+           addresses:
+             - fe80::2cce:6ff:fed1:4c66/64
+           gateway6: fe80::2cce:6ff:fed1:4c66
+

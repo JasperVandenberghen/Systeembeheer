@@ -1,6 +1,6 @@
 $TTL 360
 @ IN SOA ns.jasper-vandenberghen.sb.uclllabs.be root.ns.jasper-vandenberghen.uclllabs.be (
-		30   ; Serial
+		35  ; Serial
                 3H  ; Refresh
                 1H  ; Retry
                 1W  ; Expire
@@ -14,14 +14,19 @@ $TTL 360
 @		IN	CAA 1 issue "letsencrypt.org"
 @ 		IN	CAA 1 iodef "mailto:jasper.vandenberghen@student.ucll.be"
 mx		IN	A	193.191.177.153
+mx		IN	AAAA	2001:6a8:2880:a077::99
 @		IN 	MX 5	mx.jasper-vandenberghen.sb.uclllabs.be.
+
 ;Aliasses
 @		IN	A	193.191.177.153
+@		IN	AAAA    2001:6a8:2880:a077::99
 ns		IN	A	193.191.177.153
+ns		IN	AAAA	2001:6a8:2880:a077::99
 db		IN 	A	193.191.177.153
 www		IN	A	193.191.177.153
 www1		IN 	A	193.191.177.153
 www2		IN 	A	193.191.177.153
+fakebook	IN 	A	193.191.177.153
 secure		IN	A	193.191.177.153
 secure		IN 	CAA 1 issue "letsencrypt.org"
 secure          IN      CAA 1 iodef "mailto:jasper.vandenberghen@student.ucll.be"
